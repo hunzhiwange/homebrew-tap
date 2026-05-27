@@ -1,25 +1,25 @@
 class VwCli < Formula
   desc "Rust-first autonomous agent runtime CLI"
   homepage "https://github.com/hunzhiwange/vibewindow"
-  version "0.2.2"
+  version "0.2.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.2/vw-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "903debbb905dc482cd7dce9d06bdf7220994089f65a13e6dc2973ca30631c08e"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "a2d31890d50cdff20828d1403e55bec64258f27f9c2fbc8d03092353c88882cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.2/vw-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "0924ce9e5df983d2bc48e0c09dafe8e15111d32df5b74edfd39fd3e93d6553f4"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "de5ccff932c62a40cb427994c488fb2874b03e0313baf747f2af02678ded056a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.2/vw-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "428636fd58086c4b06740d50916b614cf81bfc4e368116299168b1ac227851c4"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ad7e050b7599e7fc356f7f071a3281c64b0fb7aedfac0c0862a31cd3332ab1b4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.2/vw-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "627c411603c70822d7fa126a1a423c4d214fbb6ebf66fdeb2b5805fe562cf4f2"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "94c61d5147e9087bdbc813aced7ed111da8db719090d9f12eed42c6528698cf5"
     end
   end
   license "MIT"
