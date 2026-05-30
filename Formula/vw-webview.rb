@@ -1,25 +1,25 @@
 class VwWebview < Formula
   desc "Cross-platform WebView window for VibeWindow"
   homepage "https://github.com/hunzhiwange/vibewindow"
-  version "0.2.3"
+  version "0.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-webview-aarch64-apple-darwin.tar.xz"
-      sha256 "aaa2e3115b57f7aa8857025b2609286c1a87c49d227679db78ac4de4dcad86b1"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.6/vw-webview-aarch64-apple-darwin.tar.xz"
+      sha256 "e5444826a2baa437792e9e862e025590a52523f55a763c6fc97368266aab1c66"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-webview-x86_64-apple-darwin.tar.xz"
-      sha256 "293638668b82912f64dbd66adbb88eb0f1e5b3f51dc48c2781115e8aa9c387a5"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.6/vw-webview-x86_64-apple-darwin.tar.xz"
+      sha256 "96b87c2ad7600b03f7cf0d44eaf7d9bde021c2cd356fed1d68083ced2d28e329"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-webview-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a1d1f14c108c9dee7099635ae6c14c9d039cc5aa2f5c02fb3cf2fd6ab7e03928"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.6/vw-webview-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "99c95cd1b034f5d4c39053e4b7f094066ad6a2dc9cb86c85ee1abeaa9f9d074a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.3/vw-webview-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9e3869542fc8c77bfb56b2dcef8c4f7dff274c21a448b84a36d7713c14656437"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.6/vw-webview-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8d7442f7a1022d4ecda9e1d32bee64eb122d005f7e265ed4856f1b8160fba2e6"
     end
   end
   license "MIT"
