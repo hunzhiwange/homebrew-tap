@@ -1,25 +1,25 @@
 class VwAcp < Formula
   desc "Agent Client Protocol bridge for VibeWindow"
   homepage "https://github.com/hunzhiwange/vibewindow"
-  version "0.2.7"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-acp-aarch64-apple-darwin.tar.xz"
-      sha256 "a839a60fbcdf1c7fa24d4ff65b3a6bf559eda6f45637b14827101b645b41a0bb"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-acp-aarch64-apple-darwin.tar.xz"
+      sha256 "83a31c729f95224924bf52e6eee38986943d8f3bc904fa8fe5e773ae319ba660"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-acp-x86_64-apple-darwin.tar.xz"
-      sha256 "57141dc377d4a03da4c07bfb95bae47c1c541efba48cd9cff500ff1254d8740c"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-acp-x86_64-apple-darwin.tar.xz"
+      sha256 "a16fd93850a4768a586ac0cc8d92b4ac5f3e7a8b07d239fb1b9129151bf10ac8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-acp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "94b40cfabc05bab595e5aeac653b4803880e074957cab7cb8947f51bf053b608"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-acp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e080025cfb06aaa0dc4687918a6266e7786e8b05945fd0975616c55717498d31"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-acp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c9d65989a438b6d2f07438747e4ef1eff377a61337c825dfd81008c1f7fec46b"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-acp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "05cdcae965bf0b84be9439ccb565f315ac7c94e0c7e7d75e3e78681f9a4f72f1"
     end
   end
   license "MIT"
