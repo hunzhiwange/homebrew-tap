@@ -1,25 +1,25 @@
 class VwDesktop < Formula
   desc "Desktop application for VibeWindow"
   homepage "https://github.com/hunzhiwange/vibewindow"
-  version "0.2.7"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-desktop-aarch64-apple-darwin.tar.xz"
-      sha256 "5fff8586fa8510eee885ea46f9e65f53c76737d56b739babcdbfdacf8a6830f0"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-desktop-aarch64-apple-darwin.tar.xz"
+      sha256 "2cad60963746c6d9c49f16b434040630aa2283768e488ca1df38786edf0054c8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-desktop-x86_64-apple-darwin.tar.xz"
-      sha256 "ebac686e574139e50afcced88793bab247a9c1c717ffffa57e9f2c89a3184c11"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-desktop-x86_64-apple-darwin.tar.xz"
+      sha256 "33de7c37cfdf3acdc545380149bedef34ec740edb2f25526a2c5ca6b75b07c73"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-desktop-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "aa33ee2940ab7eb83a6a4d805aeec0bd32a261bf832cf383d9de9d0c6f38fa59"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-desktop-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "62f56071fb7a9687e2cc82ece49107cb53357076f5c719f9a378dc73a29337bf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.2.7/vw-desktop-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "67251be18f4a4d9e30044182efa5a2e89797899d55ca4e2330232ccc01a0508a"
+      url "https://github.com/hunzhiwange/vibewindow/releases/download/v0.3.0/vw-desktop-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0b5068fbfe4f40d7bde41b622dec7598bdf0766b46ab8191920a710047958a16"
     end
   end
   license "MIT"
