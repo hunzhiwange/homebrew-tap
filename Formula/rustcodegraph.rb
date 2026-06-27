@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.1.3"
+  version "1.1.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "6bef728d39086d7696ca33c8b002a36d41523e8a1f6a1f561cc94569bd8dc38d"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "1473fa13879c512f6bb0621cedf090c268648534cb63edf29650464c05c50f26"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "c6a2d18da80100e37a47dcb340c31ff81b80a7c0f126965ab94d6b21c9ac3927"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "baea4439b65546a2cfcc9f5f1356f626963fac26de47950f5501df6a1c2b1073"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5d854a93a7614ebf6a3caac20501d0ab43f8c8a81f9d7ba5f00c6efe47054106"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "39219a1f527edb2d25cae427e5cbd9f3036d93cecbace53438fce116974c66ec"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a6fd47a9fbb06b9db0a94714f17889f3d1b4a69e2048437abb16baadc89c047f"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "69940944b08e6595c753aeb96d79b358803e93bd38a85f8d47808a892264ccf3"
     end
   end
   license "MIT"
