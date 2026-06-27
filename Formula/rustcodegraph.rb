@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.1.1"
+  version "1.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.1/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "df0b543f9f5b4097b932a405626c3a46695ea21dadd3e98417e46aed3163a993"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "6bef728d39086d7696ca33c8b002a36d41523e8a1f6a1f561cc94569bd8dc38d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.1/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "1cd1f88b946278369716ef886b55f80968084ff0bca997beb5e6a6c7309ea99b"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "c6a2d18da80100e37a47dcb340c31ff81b80a7c0f126965ab94d6b21c9ac3927"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.1/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e2ba4d1f6d8fcef47aa2a0f673fb467fdb79ab9c4db8ac7e068b46f170446127"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5d854a93a7614ebf6a3caac20501d0ab43f8c8a81f9d7ba5f00c6efe47054106"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.1/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6a7a147b102cdf0c6728ce3788f6c7e893b84422c3511da0326fda7fd744c3ae"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.3/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a6fd47a9fbb06b9db0a94714f17889f3d1b4a69e2048437abb16baadc89c047f"
     end
   end
   license "MIT"
