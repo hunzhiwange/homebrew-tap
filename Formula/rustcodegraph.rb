@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.0.1"
+  version "1.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.0.1/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "ff47bc170378d06d4b12397c113bd44581d0874f23646cc83f0937b5e2d73a95"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.0/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "70e6fefd160ce5680ea90f7f2c30c1da6d30c17ac51d07a962d83b8f1c87cba2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.0.1/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "894a2dc6f0f192a2d2c29522407462a4f1299ca5a3108868a82d62b8df693a81"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.0/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "1cc140e0cb0f0b7941a06468cf0a23e4e9e0680ac71cecb48cc39cb9a05eee62"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.0.1/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0c8cef4e3cfab34ae79ff5770c63565e1498a6cb5242f4325fc3e127c541f3a2"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.0/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "01585a9a5cc4447371003d27007dcc9e15e23287632c1dd84183cf26fdf049e7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.0.1/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fbed9e915d139274648d255456cd17ee0deb3b8115188b3e046af5655f57b1af"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.0/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ab2882390c09cd3415a8dbd669961312b4dc0550d36da46cda20d3f3bf8aaba7"
     end
   end
   license "MIT"
