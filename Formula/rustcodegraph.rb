@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.1.5"
+  version "1.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "1473fa13879c512f6bb0621cedf090c268648534cb63edf29650464c05c50f26"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "03e18769461c1840fd5dfe60abea73d30349d587bcaf8aea8f32d1a8d0121796"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "baea4439b65546a2cfcc9f5f1356f626963fac26de47950f5501df6a1c2b1073"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "ddb54c83e6670201dc283efdd7b856c638e95eea8f813f95e8e4fbbde9a43de4"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "39219a1f527edb2d25cae427e5cbd9f3036d93cecbace53438fce116974c66ec"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2fe746a048c058b1deba20a3db6b98a633dd2e6d026d07319ecd624164d755b9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.1.5/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "69940944b08e6595c753aeb96d79b358803e93bd38a85f8d47808a892264ccf3"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "af117dc9e9cd1d6349eae824e519648015d10f6df9fc20d9b471870d0e8fb424"
     end
   end
   license "MIT"
