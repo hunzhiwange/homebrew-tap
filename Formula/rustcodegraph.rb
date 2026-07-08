@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.0"
+  version "1.2.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "03e18769461c1840fd5dfe60abea73d30349d587bcaf8aea8f32d1a8d0121796"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "66c9e408eed8fc8f8000b7a074cde5e4c9e06525485e4b1e4f737d50008848d8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "ddb54c83e6670201dc283efdd7b856c638e95eea8f813f95e8e4fbbde9a43de4"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "20490ae8b6d50076129bc18b0a427142c9377bea83605e3d6893ac44c363a6d9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2fe746a048c058b1deba20a3db6b98a633dd2e6d026d07319ecd624164d755b9"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d1b32616b75bbec63158c4af284f881f451dec808cecbcd2b43615257c5e9135"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.0/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "af117dc9e9cd1d6349eae824e519648015d10f6df9fc20d9b471870d0e8fb424"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5fbdce72c1cb6a850e4650cb3337446060841c9c00d2f4b43e07acc84b93fd92"
     end
   end
   license "MIT"
