@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.1"
+  version "1.2.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "66c9e408eed8fc8f8000b7a074cde5e4c9e06525485e4b1e4f737d50008848d8"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "56377ea7b506eb866e3a0f68ee20e5dc1b4bd63ac81b0bcb6222b36ac62a0677"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "20490ae8b6d50076129bc18b0a427142c9377bea83605e3d6893ac44c363a6d9"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "e860b2bfa2771ad564d97015a47016caf68879ee917cb328f643e5a1c039af5b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d1b32616b75bbec63158c4af284f881f451dec808cecbcd2b43615257c5e9135"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a16e0aee16aff138bbcd3566738e3a89532c5c2f4520b947460a111cbf724355"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.1/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5fbdce72c1cb6a850e4650cb3337446060841c9c00d2f4b43e07acc84b93fd92"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8f31814e860aa3a34324c6204393845dfdb18d5d91182afd76288788913534ad"
     end
   end
   license "MIT"
