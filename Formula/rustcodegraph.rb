@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.3"
+  version "1.2.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "9829762ce0254a75748c089e59dc69b1d83439bde4519ae91a375c0942a0fc7b"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "cbd75101de611a214f3adc0c89b5f633c51c5c98894eda320bbb640b15a8ab5a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "66c5b086b519789a76d1b3d73fdccc1e591823de5474d3915a2bb1ebdf16ea2d"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "bacff5648f20122bd09067b395d0ca2981e6fd3b64b571264193736d5170f484"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6b1931169eb4b7d89cd6015e054795fae678bb8cb07d6367241d58a7df402ff3"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6c14c42fff7b982b4de9a769ea8ae92c73270c4cc95d41d0c56faeaa222fcfcd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a35eeb80f7438c99877490daa048c1ce3bc13894b2838d033df9a662e170540f"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "89b8dec1613f070e934ef87bf0d34fbe795bca8c486492850ee27e27df42949c"
     end
   end
   license "MIT"
