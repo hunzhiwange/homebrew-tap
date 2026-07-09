@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.2"
+  version "1.2.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "56377ea7b506eb866e3a0f68ee20e5dc1b4bd63ac81b0bcb6222b36ac62a0677"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "9829762ce0254a75748c089e59dc69b1d83439bde4519ae91a375c0942a0fc7b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "e860b2bfa2771ad564d97015a47016caf68879ee917cb328f643e5a1c039af5b"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "66c5b086b519789a76d1b3d73fdccc1e591823de5474d3915a2bb1ebdf16ea2d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a16e0aee16aff138bbcd3566738e3a89532c5c2f4520b947460a111cbf724355"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "6b1931169eb4b7d89cd6015e054795fae678bb8cb07d6367241d58a7df402ff3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.2/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8f31814e860aa3a34324c6204393845dfdb18d5d91182afd76288788913534ad"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.3/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a35eeb80f7438c99877490daa048c1ce3bc13894b2838d033df9a662e170540f"
     end
   end
   license "MIT"
