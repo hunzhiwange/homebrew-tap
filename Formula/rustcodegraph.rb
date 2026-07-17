@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.4"
+  version "1.2.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "cbd75101de611a214f3adc0c89b5f633c51c5c98894eda320bbb640b15a8ab5a"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "6971efcdf24ba82a0391903824a3432046e530e44d0e0b1f9d3c45fcf4fc7f25"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "bacff5648f20122bd09067b395d0ca2981e6fd3b64b571264193736d5170f484"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "f0597dc0df6119a22efdc0011a11e36a1ed2410770ff04676e028f511ad9624a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6c14c42fff7b982b4de9a769ea8ae92c73270c4cc95d41d0c56faeaa222fcfcd"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "34214780db4814edfc010831f1f9fca51735ebcf6641475e9bd5a6b8b9877202"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.4/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "89b8dec1613f070e934ef87bf0d34fbe795bca8c486492850ee27e27df42949c"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fd836c0e0aab410f1ae5439d646f6657c2b2c728ea0dcd574de2e5f5f1474fb1"
     end
   end
   license "MIT"
