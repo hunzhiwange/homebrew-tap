@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.5"
+  version "1.2.6"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "6971efcdf24ba82a0391903824a3432046e530e44d0e0b1f9d3c45fcf4fc7f25"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "a23b5596a525086610d8405e9346d7e398e8aad79844a6535484efd4afab56ae"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "f0597dc0df6119a22efdc0011a11e36a1ed2410770ff04676e028f511ad9624a"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "2b4f416a3be1c5373ddc8b31de12a64857ff7161f9afa16a0a07a33949575442"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "34214780db4814edfc010831f1f9fca51735ebcf6641475e9bd5a6b8b9877202"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "fd78c2ef37450a3f3b920ab9a92206d0352d69283f50c02ae87c22b60a5d954d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.5/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fd836c0e0aab410f1ae5439d646f6657c2b2c728ea0dcd574de2e5f5f1474fb1"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cb76315cb73eb47a2cdbe3492a085918ef9203e8a126e2199a7d1de50178d942"
     end
   end
   license "MIT"
