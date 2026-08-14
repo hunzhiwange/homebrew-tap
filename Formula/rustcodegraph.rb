@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.6"
+  version "1.2.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "a23b5596a525086610d8405e9346d7e398e8aad79844a6535484efd4afab56ae"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.8/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "2fa62bd0762cb63b238eea6955ab3c34e6c6ca22aa76f95be173d8a2d6c3cf8a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "2b4f416a3be1c5373ddc8b31de12a64857ff7161f9afa16a0a07a33949575442"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.8/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "0913fb1a2fd1f41dc50ed3556376df6b86ef68a6f087ee8d2463b22aaa8008a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fd78c2ef37450a3f3b920ab9a92206d0352d69283f50c02ae87c22b60a5d954d"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.8/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "590bb621da203add0663b6ca4f498c38b9c17d2b6197f2ebadcae6661bb6629d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.6/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "cb76315cb73eb47a2cdbe3492a085918ef9203e8a126e2199a7d1de50178d942"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.8/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "27ab6f24ddd8007359a890d8dcdfe96dbf1eb9d44cc7f1be5c60c06fd97dd0d3"
     end
   end
   license "MIT"
@@ -49,10 +49,18 @@ class Rustcodegraph < Formula
   end
 
   def install
-    bin.install "rustcodegraph" if OS.mac? && Hardware::CPU.arm?
-    bin.install "rustcodegraph" if OS.mac? && Hardware::CPU.intel?
-    bin.install "rustcodegraph" if OS.linux? && Hardware::CPU.arm?
-    bin.install "rustcodegraph" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "rustcodegraph"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "rustcodegraph"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "rustcodegraph"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "rustcodegraph"
+    end
 
     install_binary_aliases!
 
