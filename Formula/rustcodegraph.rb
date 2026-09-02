@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "1.2.9"
+  version "1.2.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.9/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "04469432d8dda7cea1da677718f5a2155004159b4418130cb81c874903d0ae21"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.10/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "c673720d5c96aedbebcc5c586084e0c316d77cc33ad9e76824333a9a1328068b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.9/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "c004c38698f79130e824a0da9cf9f0ea12be474627db686e255e21e2b1921bab"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.10/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "08f0c1cf75849894aafc908cee90815fc0234bc4d9410452359b25290d93e997"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.9/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e0f1ade474aa19b261396d45219e6c124a530faa864361276aebbffff7a929ab"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.10/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "36ce34e215ed70854c71bf760342f5bd3c4f0f98c18e7582330abe9416b7a360"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.9/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "e338690086d057a9aebbd025d0ca0a5667f540a92697c427f331e433f6126e76"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v1.2.10/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5f858c9836faa08956711095c32908005661fdd3391c114a605023ac7ac0fbd3"
     end
   end
   license "MIT"
