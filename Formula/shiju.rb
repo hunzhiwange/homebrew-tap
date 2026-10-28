@@ -1,25 +1,25 @@
 class Shiju < Formula
   desc "Rust-first autonomous agent runtime CLI"
   homepage "https://github.com/hunzhiwange/shiju"
-  version "0.5.11"
+  version "0.5.12"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.11/shiju-aarch64-apple-darwin.tar.gz"
-      sha256 "bae9748b2ba793b79c73ee97ec07d4f503fddf72177e6b7c5d684c64dfb09b45"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.12/shiju-aarch64-apple-darwin.tar.gz"
+      sha256 "85ae95228285eb47814edcde0e16fc624a28ee0a707601f7d08927b28e3d889a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.11/shiju-x86_64-apple-darwin.tar.gz"
-      sha256 "9a5025dddd276b344937e92d97e45808df9a79a2a307958cc846c433d865fbc2"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.12/shiju-x86_64-apple-darwin.tar.gz"
+      sha256 "10dd3160e8783277ce9e7eca2510f486f6760e413671f0c8fbedbf11d2ba7476"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.11/shiju-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a6bc2d3357b466e8b82c2b9c7c3bcb1c37b8ab122013be9d883bcd9132cba709"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.12/shiju-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "86684e6c7bc878bc595760fde0543a9c4a7c41eb1d7dc022174e435cee2b1de8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.11/shiju-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bb47210ff38e4a977f230300616793f717197e61a9d82ddffc697c1031b5d044"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.12/shiju-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ba43dc34f99582cfb1b9f8d2242d23b5d416cacf7ac04c9a01225fd47b6a793c"
     end
   end
   license "MIT"
