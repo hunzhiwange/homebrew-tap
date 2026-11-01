@@ -1,25 +1,25 @@
 class ShijuDesktop < Formula
   desc "Desktop application for ShiJu"
   homepage "https://github.com/hunzhiwange/shiju"
-  version "0.5.15"
+  version "0.5.17"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.15/shiju-desktop-aarch64-apple-darwin.tar.gz"
-      sha256 "356b842354e2b8f3ba2b74efe0e7e6c2daac48e4cf536a35dd06d9f3bb856f16"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-desktop-aarch64-apple-darwin.tar.gz"
+      sha256 "e339b976a3325f20e80fb1d6f1534bd7d0f3858b35787e7aeb806cfd99e6fb07"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.15/shiju-desktop-x86_64-apple-darwin.tar.gz"
-      sha256 "5073284051e6d8cd38177208a26f61c2f89f694b3ac25c68eba4f7bdcb7a5b28"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-desktop-x86_64-apple-darwin.tar.gz"
+      sha256 "226a1843fbf27be624bc9e3749da02b6bb786e50bc17618f110019da7b6022a1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.15/shiju-desktop-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "eb101e83e9abb47ba2afe78c08b05f81a2b32aef7b4ca2fc3c4ac23c1fb7d24e"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-desktop-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b854e2ae365c2f28a0d99c6365b01760e30b73d06a63e7791060db67869f3f17"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.15/shiju-desktop-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "46da1b0d4b8245d7f031c7357b7fe56b7b2499b009d9bb9bc0c586a51a1f89e2"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-desktop-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "899ed9bc5dd3c50d223359057ac12988245b006dcf32b38067b630a9c613e7b9"
     end
   end
   license "MIT"
