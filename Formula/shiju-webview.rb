@@ -1,25 +1,25 @@
 class ShijuWebview < Formula
   desc "Cross-platform WebView window for VibeWindow"
   homepage "https://github.com/hunzhiwange/shiju"
-  version "0.5.17"
+  version "0.5.18"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-webview-aarch64-apple-darwin.tar.gz"
-      sha256 "b277302f1528a2240206efbfa229d09bce6e1d9f7e4e8adc0d6b294d081f6f57"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.18/shiju-webview-aarch64-apple-darwin.tar.gz"
+      sha256 "b6297aeaee28ba041e9a1307c40f23538eb097632ab2d364e6cd273a62da0b1b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-webview-x86_64-apple-darwin.tar.gz"
-      sha256 "dc2c974b6998d06ed9bb894623f174656ee3078d0053c243b1a9553a9729c0d5"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.18/shiju-webview-x86_64-apple-darwin.tar.gz"
+      sha256 "059b1926236acce15fc1fbe8f5b1ac6b6159149c920306b1d04bef380fca811a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-webview-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "871ed9c05b777519374f721b82584a088d278e60c039eef5687a35e0adadcf3f"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.18/shiju-webview-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c3f8b56a51350b5e44094b032c125abbd1eec1f541b27bcf9a99de7df69b1fd7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.17/shiju-webview-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fe81cabe867eccbf5e40b644829a29217065a4d0dc71dfd45fc0bae7fc52eb71"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.5.18/shiju-webview-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "079991de5a34131c7c0141e8f0dc21145344e2da96f9f68edd6296877d9adb53"
     end
   end
   license "MIT"
