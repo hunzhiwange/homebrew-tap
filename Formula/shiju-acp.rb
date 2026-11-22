@@ -1,25 +1,25 @@
 class ShijuAcp < Formula
   desc "Agent Client Protocol bridge for ShiJu"
   homepage "https://github.com/hunzhiwange/shiju"
-  version "0.6.0"
+  version "0.7.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.6.0/shiju-acp-aarch64-apple-darwin.tar.gz"
-      sha256 "7d06203eebc9bc39fb076e3d0347bd9dd36da6de54cb6baa7864ea04f5db79e0"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-aarch64-apple-darwin.tar.gz"
+      sha256 "49d6e3ffa7ef7123ca224460417fd61c50c0b7204c2fddf99a690ee1087b37f1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.6.0/shiju-acp-x86_64-apple-darwin.tar.gz"
-      sha256 "f9ad302b92276e5349bf1b6d4701500d22cb9c77e2ad0f1e195b53b073e11d9f"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-x86_64-apple-darwin.tar.gz"
+      sha256 "7350a95d5a9ab65ef0136d81615e0d106b09ff2b0d0a8953a4d269646fab3b9a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.6.0/shiju-acp-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7b964a664bdccc0b71982fe40fb1442b3b36d8535961236e7cc019b877e40fd8"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d761224e3daf2f327cf4453023ddecbaa19a85b65c883113ee372460c5fbd348"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.6.0/shiju-acp-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ab24f7bf062ec949930f2c1a850267fc2a5f7d38d66c5d1a9d790037794469e6"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4188d2dd1998d6fafe545586c91409b88bd471be4c476082c3f0f3c0707f098b"
     end
   end
   license "MIT"
@@ -50,16 +50,16 @@ class ShijuAcp < Formula
 
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "acp"
+      bin.install "acp", "aionrs-acp"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "acp"
+      bin.install "acp", "aionrs-acp"
     end
     if OS.linux? && Hardware::CPU.arm?
-      bin.install "acp"
+      bin.install "acp", "aionrs-acp"
     end
     if OS.linux? && Hardware::CPU.intel?
-      bin.install "acp"
+      bin.install "acp", "aionrs-acp"
     end
 
     install_binary_aliases!
