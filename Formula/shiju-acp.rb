@@ -1,25 +1,25 @@
 class ShijuAcp < Formula
   desc "Agent Client Protocol bridge for ShiJu"
   homepage "https://github.com/hunzhiwange/shiju"
-  version "0.7.8"
+  version "0.7.9"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-aarch64-apple-darwin.tar.gz"
-      sha256 "49d6e3ffa7ef7123ca224460417fd61c50c0b7204c2fddf99a690ee1087b37f1"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.9/shiju-acp-aarch64-apple-darwin.tar.gz"
+      sha256 "1462ac522e573afc5f6b61bff758ef8eb30fc93a650ac3effbab8837b4961bb9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-x86_64-apple-darwin.tar.gz"
-      sha256 "7350a95d5a9ab65ef0136d81615e0d106b09ff2b0d0a8953a4d269646fab3b9a"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.9/shiju-acp-x86_64-apple-darwin.tar.gz"
+      sha256 "cb36b8305a0bfe300e156a460a21d6cecdaa691c79805808e9da63cee4ceb769"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d761224e3daf2f327cf4453023ddecbaa19a85b65c883113ee372460c5fbd348"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.9/shiju-acp-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "47fdd7781ae08a5a3dd7b65d04731e5b9b955370ce97ccf89f5bf11a6d45e5c1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.8/shiju-acp-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4188d2dd1998d6fafe545586c91409b88bd471be4c476082c3f0f3c0707f098b"
+      url "https://github.com/hunzhiwange/shiju/releases/download/v0.7.9/shiju-acp-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4acef8cb763b798cc30852144bd7ba288a98a93f9253215000c86c876a6346db"
     end
   end
   license "MIT"
