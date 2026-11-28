@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "2.0.1"
+  version "2.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.1/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "5c0a93eab12326638be24f9f584b01f6d2bed51811a29c1c6f9c96b0ee064be8"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "93a98c0c187147110a71a3fb0a378ec54a7c5b8cbe4b2e4e9134add6f714160b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.1/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "6606811283b343273d1671ac51c97d9b84c7f2a81ac78340c5bedece8b6a00a3"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "cca82f2a2215399adc4b09193bf2b69fab43d1224c38b1ef3b90eb1ed0a6d545"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.1/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "15ec6d0bc5c20cb286c859c328cd5584c54eec3834ab8ba39cc381ac62e5ff9d"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2addea07665de0ae19c9f9abe8ce4cbe145e360194a06f61f96a93e91a7982b5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.1/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a76b41918a460bff79045e4177085c5a31c0d185d02977645d65f506dc3e8e84"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c34430c780086ffbe057e0c770f80792d982d2b8c313dc609eeaefdf51cc16ff"
     end
   end
   license "MIT"
