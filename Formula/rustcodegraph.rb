@@ -1,25 +1,25 @@
 class Rustcodegraph < Formula
   desc "Local-first code intelligence graph and CLI for AI agents"
   homepage "https://github.com/hunzhiwange/rustcodegraph"
-  version "2.0.2"
+  version "2.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-aarch64-apple-darwin.tar.xz"
-      sha256 "93a98c0c187147110a71a3fb0a378ec54a7c5b8cbe4b2e4e9134add6f714160b"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.3/rustcodegraph-aarch64-apple-darwin.tar.xz"
+      sha256 "ae02c3550f5eef4b12c344f2ab924dab240dd5c090096c89a19a6dc7d2808755"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-x86_64-apple-darwin.tar.xz"
-      sha256 "cca82f2a2215399adc4b09193bf2b69fab43d1224c38b1ef3b90eb1ed0a6d545"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.3/rustcodegraph-x86_64-apple-darwin.tar.xz"
+      sha256 "b5d1e5e0229bf36b3b4cfd897f4d6b32e75eb0edab9902cdc01412ab1d335cb9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2addea07665de0ae19c9f9abe8ce4cbe145e360194a06f61f96a93e91a7982b5"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.3/rustcodegraph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "506126aaa9488cf8286a54628fced94ddaa2cf5ce6dee44bfeb09d0829a0181e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.2/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c34430c780086ffbe057e0c770f80792d982d2b8c313dc609eeaefdf51cc16ff"
+      url "https://github.com/hunzhiwange/rustcodegraph/releases/download/v2.0.3/rustcodegraph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bb64888f0d3fccf2b38313f8aad536ce5668cdebce5cc16db6e0ea95650e54a8"
     end
   end
   license "MIT"
